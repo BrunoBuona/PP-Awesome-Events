@@ -1,6 +1,3 @@
-// Estilos
-import '../styles/Footer.css'
-
 // Importaciones Node
 import { Link } from 'react-router-dom'
 
@@ -20,8 +17,7 @@ export default function Footer() {
     };
 
     return (
-        <>
-        <footer style={{ height: '10vh',width:'100%' , display: 'flex', flexDirection: 'row', backgroundColor: '#1a1a1a',position:'fixed',bottom:'0' }}>
+        <footer style={{ height: '10vh',width:'100%' , display: 'flex', flexDirection: 'row', backgroundColor: '#1a1a1a',position:'absolute', bottom:'0' }}>
                 <picture>
                     <img style={{ height: '100%', width: '100%' }} src="https://www.awesomeeventsph.co/uploads/1/2/6/2/12627440/published/aeheader.png?1545106361" alt="Logotipo de Awesome Events" />
                 </picture>
@@ -37,6 +33,5 @@ export default function Footer() {
                         onMouseLeave={(e) => (e.target.style.color = linkStyle.color)} to="/data-storage">Almacenamiento de Datos</Link>
                 </nav>
             </footer>
-        </>
     )
     }
