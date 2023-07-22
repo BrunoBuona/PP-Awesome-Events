@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom'
 
 export default function Footer() {
-    
+
     const linkStyle = {
         textDecoration: 'none',
         color: 'yellow',
@@ -17,21 +17,18 @@ export default function Footer() {
     };
 
     return (
-        <footer style={{ height: '10vh',width:'100%' , display: 'flex', flexDirection: 'row', backgroundColor: '#1a1a1a',position:'absolute', bottom:'0' }}>
-                <picture>
-                    <img style={{ height: '100%', width: '100%' }} src="https://www.awesomeeventsph.co/uploads/1/2/6/2/12627440/published/aeheader.png?1545106361" alt="Logotipo de Awesome Events" />
-                </picture>
-                <nav style={{ display: 'flex', justifyContent: 'end', flexGrow: '1', gap: '1.4rem', alignItems: 'center', marginRight: '2rem' }}>
-                    <Link style={linkStyle}
-                        onMouseEnter={(e) => (e.target.style.color = hoverStyle.color)}
-                        onMouseLeave={(e) => (e.target.style.color = linkStyle.color)} to="/locations">Nuestros Salones</Link>
-                    <Link style={linkStyle}
-                        onMouseEnter={(e) => (e.target.style.color = hoverStyle.color)}
-                        onMouseLeave={(e) => (e.target.style.color = linkStyle.color)} to="/work-with-us">Trabaja con Nosotros</Link>
-                    <Link style={linkStyle}
-                        onMouseEnter={(e) => (e.target.style.color = hoverStyle.color)}
-                        onMouseLeave={(e) => (e.target.style.color = linkStyle.color)} to="/data-storage">Almacenamiento de Datos</Link>
-                </nav>
-            </footer>
+        <footer style={{ height: '10vh', width: '100%', display: 'flex', flexDirection: 'row', backgroundColor: '#1a1a1a' }}>
+            <div style={{ display: 'flex', justifyContent: 'end', flexGrow: '1', gap: '1.4rem', alignItems: 'center', paddingRight: '2rem' }}>
+                <Link style={linkStyle}
+                    onMouseEnter={(e) => (e.target.style.color = hoverStyle.color)}
+                    onMouseLeave={(e) => (e.target.style.color = linkStyle.color)} to="/locations">Nuestros Salones</Link>
+                <Link style={linkStyle}
+                    onMouseEnter={(e) => (e.target.style.color = hoverStyle.color)}
+                    onMouseLeave={(e) => (e.target.style.color = linkStyle.color)} to="/work-with-us">Trabaja con Nosotros</Link>
+                <Link style={linkStyle}
+                    onMouseEnter={(e) => (e.target.style.color = hoverStyle.color)}
+                    onMouseLeave={(e) => (e.target.style.color = linkStyle.color)} to="/data-storage">Almacenamiento de Datos</Link>
+            </div>
+        </footer>
     )
-    }
+}

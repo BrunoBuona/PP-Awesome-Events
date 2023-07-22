@@ -1,6 +1,3 @@
-// Estilos
-import '../styles/Navbar.css'
-
 // Importaciones Node
 import { Link } from 'react-router-dom'
 
@@ -25,7 +22,7 @@ export default function Navbar() {
                 <picture>
                     <img style={{ height: '100%', width: '100%' }} src="https://www.awesomeeventsph.co/uploads/1/2/6/2/12627440/published/aeheader.png?1545106361" alt="Logotipo de Awesome Events" />
                 </picture>
-                <nav style={{ display: 'flex', justifyContent: 'end', flexGrow: '1', gap: '1.4rem', alignItems: 'center', marginRight: '2rem' }}>
+                <nav style={{ display: 'flex', justifyContent: 'end', flexGrow: '1', gap: '1.4rem', alignItems: 'center', paddingRight: '2rem' }}>
                     <Link style={linkStyle}
                         onMouseEnter={(e) => (e.target.style.color = hoverStyle.color)}
                         onMouseLeave={(e) => (e.target.style.color = linkStyle.color)} to="/">Inicio</Link>
